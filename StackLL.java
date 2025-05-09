@@ -12,7 +12,6 @@ public class StackLL {
         public static boolean isEmpty () {
             return head == null;
         }
-
         // push 
         public static void push (int data) {
             Node newNode = new Node(data);
@@ -24,7 +23,6 @@ public class StackLL {
             newNode.next = head;
             head = newNode;
         }
-
         // pop
         public static int pop () {
             if (isEmpty()) {
@@ -34,7 +32,6 @@ public class StackLL {
             head = head.next;
             return top;
         }
-
         // peek
         public static int peek () {
             if (isEmpty()) {
